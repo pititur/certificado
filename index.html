@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificado QR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    
+    .container {
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        width: 90%;
+        max-width: 350px;
+    }
+    
+    .header, .footer {
+        background-color: #13322c;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+    
+    .header img, .footer img {
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
+    }
+    
+    .content {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .check-mark {
+        font-size: 50px;
+        color: green;
+    }
+    
+    h2 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+    }
+    
+    li {
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: #333;
+    }
+    
+    button {
+        background-color: #13322c;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    
+    @media (min-width: 768px) {
+        .container {
+            width: 350px;
+        }
+    
+        p, li {
+            font-size: 16px;
+        }
+    
+        button {
+            font-size: 16px;
+        }
+    }
+    
+</style>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <img src="https://i.ibb.co/NFCWm2z/Whats-App-Image-2024-07-18-at-1-05-17-PM.jpg" alt="2">
+        </div>
+        <div class="content">
+            <div class="check-mark">✔</div>
+            <h2>QR. Válido:</h2>
+            <p>Para validar el Certificado, los siguientes datos deberán coincidir exactamente con los del documento presentado.</p>
+            <ul>
+                <li><strong>Fecha de emisión:</strong> 2020-11-20 13:02:17</li>
+                <li><strong>CURP:</strong> VAGK001226MJCZNRA3</li>
+                <li><strong>Nombres:</strong> KARLA JOSELIN </li>
+                <li><strong>Primer apellido:</strong> VASQUEZ</li>
+                <li><strong>Fecha de aplicación dosis 1:</strong> 2022-06-20</li>
+            </ul>
+            <button id="okButton">OK</button>
+        </div>
+        <div class="footer">
+            <img src="https://i.ibb.co/Tb3JYnp/Whats-App-Image-2024-07-18-at-1-05-40-PM.jpg" alt="1">
+        </div>
+    </div>
+    <script>
+        document.getElementById('okButton').addEventListener('click', function() {
+            window.location.href = 'https://www.gob.mx';
+        });
+    </script>
+
+
+</body>
+</html>
+
+
+
